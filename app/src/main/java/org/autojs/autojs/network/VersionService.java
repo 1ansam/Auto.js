@@ -17,7 +17,6 @@ import org.autojs.autojs.ui.update.UpdateInfoDialogBuilder;
 import com.stardust.util.NetworkUtils;
 
 import io.reactivex.Observable;
-import io.reactivex.android.schedulers.AndroidSchedulers;
 import io.reactivex.annotations.NonNull;
 import io.reactivex.schedulers.Schedulers;
 import retrofit2.Retrofit;

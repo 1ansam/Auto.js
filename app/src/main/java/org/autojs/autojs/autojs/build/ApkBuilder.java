@@ -4,9 +4,6 @@ import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 
 import com.stardust.app.GlobalAppContext;
-import com.stardust.autojs.apkbuilder.ApkPackager;
-import com.stardust.autojs.apkbuilder.ManifestEditor;
-import com.stardust.autojs.apkbuilder.util.StreamUtils;
 import com.stardust.autojs.project.BuildInfo;
 import com.stardust.autojs.project.ProjectConfig;
 import com.stardust.autojs.script.EncryptedScriptFileHeader;
@@ -15,6 +12,13 @@ import com.stardust.pio.PFiles;
 import com.stardust.util.AdvancedEncryptionStandard;
 import com.stardust.util.MD5;
 
+import org.autojs.autojs.autojs.com.stardust.autojs.apkbuilder.ApkPackager;
+import org.autojs.autojs.autojs.com.stardust.autojs.apkbuilder.ManifestEditor;
+import org.autojs.autojs.autojs.com.stardust.autojs.apkbuilder.util.StreamUtils;
+import org.autojs.autojs.autojs.pxb.android.StringItem;
+import org.autojs.autojs.autojs.pxb.android.axml.AxmlWriter;
+import org.autojs.autojs.autojs.zhao.arsceditor.ResDecoder.ARSCDecoder;
+import org.autojs.autojs.autojs.zhao.arsceditor.ResDecoder.data.ResTable;
 import org.autojs.autojs.build.TinySign;
 
 import java.io.BufferedInputStream;
@@ -27,11 +31,6 @@ import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.concurrent.Callable;
 import java.util.regex.Pattern;
-
-import pxb.android.StringItem;
-import pxb.android.axml.AxmlWriter;
-import zhao.arsceditor.ResDecoder.ARSCDecoder;
-import zhao.arsceditor.ResDecoder.data.ResTable;
 
 
 /**
